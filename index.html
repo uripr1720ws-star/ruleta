@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quest | Learn & Play</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="fondo-decoracion decoracion-1"></div>
+    <div class="fondo-decoracion decoracion-2"></div>
+
+    <header class="encabezado">
+        <a class="logo" href="#">
+            <span class="logo-icono">💬</span>
+            <span>English<span class="logo-color">Quest</span></span>
+        </a>
+
+        <div class="etiqueta-nivel">⭐ LEARN & PLAY</div>
+    </header>
+
+    <main class="contenedor">
+        <section class="presentacion">
+            <div class="etiqueta-superior">YOUR ENGLISH ADVENTURE STARTS HERE!</div>
+            <h1>Learn English.<br><span>Have fun!</span> 🎉</h1>
+            <p>¡Gir​á la ruleta, respondé en inglés y sumá puntos!</p>
+        </section>
+
+        <section class="panel-estadisticas">
+            <div class="estadistica">
+                <div class="estadistica-icono icono-puntos">🏆</div>
+                <div>
+                    <span class="estadistica-titulo">YOUR SCORE</span>
+                    <strong id="puntaje">0</strong>
+                </div>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="estadistica">
+                <div class="estadistica-icono icono-preguntas">📝</div>
+                <div>
+                    <span class="estadistica-titulo">QUESTIONS</span>
+                    <strong id="contador">0</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="zona-juego">
+            <div class="titulo-seccion">
+                <span class="numero-seccion">01</span>
+                <div>
+                    <h2>Spin the wheel!</h2>
+                    <p>Descubrí tu próximo desafío.</p>
+                </div>
+            </div>
+
+            <div class="zona-ruleta">
+                <div class="flecha">▼</div>
+
+                <div class="ruleta" id="ruleta">
+                    <div class="etiquetas-ruleta">
+                        <span class="etiqueta-ruleta etiqueta-1">🔤</span>
+                        <span class="etiqueta-ruleta etiqueta-2">📚</span>
+                        <span class="etiqueta-ruleta etiqueta-3">🗣️</span>
+                        <span class="etiqueta-ruleta etiqueta-4">⏰</span>
+                        <span class="etiqueta-ruleta etiqueta-5">❓</span>
+                        <span class="etiqueta-ruleta etiqueta-6">🌎</span>
+                        <span class="etiqueta-ruleta etiqueta-7">✍️</span>
+                    </div>
+                    <div class="centro-ruleta">GO!</div>
+                </div>
+            </div>
+
+            <button id="botonGirar" class="boton-girar">
+                <span>🎯</span> SPIN THE WHEEL!
+            </button>
+            <p class="texto-ayuda">Cada giro es una nueva oportunidad para aprender.</p>
+        </section>
+
+        <section id="tarjetaPregunta" class="tarjeta-pregunta oculto">
+            <div class="pregunta-cabecera">
+                <span id="categoria" class="categoria-etiqueta">VOCABULARY</span>
+                <span class="etiqueta-puntos">+10 POINTS</span>
+            </div>
+
+            <p id="tema" class="tema-pregunta">English challenge</p>
+            <h2 id="pregunta">Your question goes here</h2>
+
+            <div id="opciones" class="opciones"></div>
+
+            <div id="resultado" class="resultado" aria-live="polite"></div>
+
+            <button id="botonSiguiente" class="boton-siguiente oculto">
+                NEXT CHALLENGE ➜
+            </button>
+        </section>
+
+        <section class="panel-consejo">
+            <div class="consejo-icono">💡</div>
+            <div>
+                <h3>Little tip!</h3>
+                <p>No tengas miedo de equivocarte. Cada respuesta te ayuda a mejorar tu inglés.</p>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <div class="titulo-seccion titulo-categorias">
+                <span class="numero-seccion">02</span>
+                <div>
+                    <h2>What will you learn?</h2>
+                    <p>Conocé las categorías del juego.</p>
+                </div>
+            </div>
+
+            <div class="cuadricula-categorias">
+                <article class="mini-categoria cat-vocabulario">
+                    <span>🔤</span>
+                    <h3>Vocabulary</h3>
+                    <p>Palabras y significados.</p>
+                </article>
+
+                <article class="mini-categoria cat-grammar">
+                    <span>📚</span>
+                    <h3>Grammar</h3>
+                    <p>Reglas y estructuras.</p>
+                </article>
+
+                <article class="mini-categoria cat-speaking">
+                    <span>🗣️</span>
+                    <h3>Expressions</h3>
+                    <p>Frases cotidianas.</p>
+                </article>
+
+                <article class="mini-categoria cat-tenses">
+                    <span>⏰</span>
+                    <h3>Verb Tenses</h3>
+                    <p>Presente y pasado.</p>
+                </article>
+
+                <article class="mini-categoria cat-questions">
+                    <span>❓</span>
+                    <h3>Questions</h3>
+                    <p>Preguntas en inglés.</p>
+                </article>
+
+                <article class="mini-categoria cat-world">
+                    <span>🌎</span>
+                    <h3>Everyday English</h3>
+                    <p>Inglés de todos los días.</p>
+                </article>
+
+                <article class="mini-categoria cat-writing">
+                    <span>✍️</span>
+                    <h3>Complete it!</h3>
+                    <p>Completá las oraciones.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>💗 English Quest · Learn something new every day!</p>
+        <span>Made for learning ✨</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
